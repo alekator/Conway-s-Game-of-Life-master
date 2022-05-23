@@ -155,9 +155,9 @@ public class ConwaysGameOfLife extends JFrame implements ActionListener {
         } else if (ae.getSource().equals(mi_help_source)) {
             Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
             try {
-                desktop.browse(new URI("https://github.com/Burke9077/Conway-s-Game-of-Life"));
+                desktop.browse(new URI("https://disk.yandex.ru/d/Lo1tHWQ586KGSw"));
             } catch (Exception ex) {
-                JOptionPane.showMessageDialog(null, "Source is available on GitHub at:\nhttps://github.com/Burke9077/Conway-s-Game-of-Life", "Source", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Source is available on GitHub at:\nhttps://disk.yandex.ru/d/Lo1tHWQ586KGSw", "Source", JOptionPane.INFORMATION_MESSAGE);
             }
         } else if (ae.getSource().equals(mi_help_about)) {
             JOptionPane.showMessageDialog(null, "Conway's game of life was a cellular animation devised by the mathematician John Conway.\nThis Java, swing based implementation was created by Alex Antonov.");
@@ -225,7 +225,7 @@ public class ConwaysGameOfLife extends JFrame implements ActionListener {
             try {
                 for (Point newPoint : point) {
                     // Draw new point
-                    g.setColor(Color.blue);
+                    g.setColor(Color.red);
                     g.fillRect(BLOCK_SIZE + (BLOCK_SIZE*newPoint.x), BLOCK_SIZE + (BLOCK_SIZE*newPoint.y), BLOCK_SIZE, BLOCK_SIZE);
                 }
             } catch (ConcurrentModificationException cme) {}
