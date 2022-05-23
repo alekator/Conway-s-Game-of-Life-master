@@ -100,7 +100,7 @@ public class ConwaysGameOfLife extends JFrame implements ActionListener {
             // Put up an options panel to change the number of moves per second
             final JFrame f_options = new JFrame();
             f_options.setTitle("Options");
-            f_options.setSize(300,60);
+            f_options.setSize(300,80);
             f_options.setLocation((Toolkit.getDefaultToolkit().getScreenSize().width - f_options.getWidth())/2, 
                 (Toolkit.getDefaultToolkit().getScreenSize().height - f_options.getHeight())/2);
             f_options.setResizable(false);
@@ -123,7 +123,7 @@ public class ConwaysGameOfLife extends JFrame implements ActionListener {
         } else if (ae.getSource().equals(mi_game_autofill)) {
             final JFrame f_autoFill = new JFrame();
             f_autoFill.setTitle("Autofill");
-            f_autoFill.setSize(360, 60);
+            f_autoFill.setSize(360, 80);
             f_autoFill.setLocation((Toolkit.getDefaultToolkit().getScreenSize().width - f_autoFill.getWidth())/2, 
                 (Toolkit.getDefaultToolkit().getScreenSize().height - f_autoFill.getHeight())/2);
             f_autoFill.setResizable(false);
@@ -155,9 +155,9 @@ public class ConwaysGameOfLife extends JFrame implements ActionListener {
         } else if (ae.getSource().equals(mi_help_source)) {
             Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
             try {
-                desktop.browse(new URI("https://disk.yandex.ru/d/Lo1tHWQ586KGSw"));
+                desktop.browse(new URI("https://github.com/alekator/Conway-s-Game-of-Life-master"));
             } catch (Exception ex) {
-                JOptionPane.showMessageDialog(null, "Source is available on GitHub at:\nhttps://disk.yandex.ru/d/Lo1tHWQ586KGSw", "Source", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Source is available on GitHub at:\nhttps://github.com/alekator/Conway-s-Game-of-Life-master", "Source", JOptionPane.INFORMATION_MESSAGE);
             }
         } else if (ae.getSource().equals(mi_help_about)) {
             JOptionPane.showMessageDialog(null, "Conway's game of life was a cellular animation devised by the mathematician John Conway.\nThis Java, swing based implementation was created by Alex Antonov.");
