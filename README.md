@@ -120,3 +120,4 @@ This project serves as:
 - a strong demonstration of algorithmic thinking
 - a basis for more advanced simulations
 - a bridge between math, logic, and visual computation
+  
